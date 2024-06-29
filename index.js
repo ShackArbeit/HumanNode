@@ -76,5 +76,5 @@ app.use( NotAuthSendEmail)
 app.use(ResendPassword)
 
 app.listen(PORT,()=>{
-      console.log('Server running at port 8000 !')
+      console.log('Server running at port 3000 !')
 })
