@@ -28,7 +28,7 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
-
+const PORT = process.env.PORT || 3030;
 
 
 // 以下為經過會員註冊後才預約的路由設定
@@ -75,6 +75,6 @@ app.use( NotAuthSendEmail)
 // 以下為忘記註冊時密碼的部分 
 app.use(ResendPassword)
 
-app.listen(8000,()=>{
+app.listen(PORT,()=>{
       console.log('Server running at port 8000 !')
 })
