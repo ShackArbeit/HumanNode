@@ -75,7 +75,12 @@ app.use( NotAuthSendEmail)
 // 以下為忘記註冊時密碼的部分 
 app.use(ResendPassword)
 
-app.listen(PORT,(res)=>{
-      res.send('Hello World!')
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+
+app.listen(PORT,()=>{
+     
       console.log('Server running at port 3000 !')
 })
