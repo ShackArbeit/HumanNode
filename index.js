@@ -76,5 +76,6 @@ app.use( NotAuthSendEmail)
 app.use(ResendPassword)
 
 app.listen(PORT,()=>{
+      res.send('Hello World!')
       console.log('Server running at port 3000 !')
 })
