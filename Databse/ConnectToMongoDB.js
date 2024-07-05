@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 let isConnected = false;
-const url = "mongodb+srv://wang8119:wang8119@cluster0.w3kipgk.mongodb.net/myWebsite?retryWrites=true&w=majority&appName=Cluster0";
+const url = "mongodb+srv://wang8119:FMD8Z4360Bp0RK1a@cluster0.w3kipgk.mongodb.net/myWebsite?retryWrites=true&w=majority&appName=Cluster0";
 
 const connectToDB = async () => {
   mongoose.set('strictQuery', true);
